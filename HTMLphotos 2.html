@@ -1,0 +1,238 @@
+﻿<html>
+<head>
+<script src="jquery-3.3.1.js" type="text/javascript">
+</script>
+<link href="https://fonts.googleapis.com/css?family=Cairo|Roboto" rel="stylesheet"
+type="text/css" />
+<style type="text/css">
+        body {
+            padding: 30px;
+            direction: rtl;
+            font-size: 20px;
+            font-family: 'Cairo', sans-serif, 'Roboto', sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .front {
+            border: 1px solid blue;
+            width: 100%;
+            height: 100%;
+        }
+        .back {
+            border: 1px solid blue;
+            background-color: blue;
+            width: 100%;
+            height: 100%;
+        }
+        .row {
+            display: flex;
+        }
+        .s1 { background-image: url(01.jpg);
+		background-size: 150px;
+		background-position: center;
+		}
+        .s2 { background-image: url(02.jpg);background-size: 160px;
+		background-position: center;}
+        .s3 { background-image: url(03.jpg);background-size: 160px;
+		background-position: center;}
+        .s4 { background-image: url(04.jpg);background-size: 120px;
+		background-position: center;}
+        .s5 { background-image: url(05.jpg);background-size: 160px;
+		background-position: center;}
+        .s6 { background-image: url(06.jpg);background-size: 150px;
+		background-position: center;}
+        .s7 { background-image: url(07.jpg);background-size: 160px;
+		background-position: center;}
+        .s8 { background-image: url(08.jpg);background-size: 160px;
+		background-position: center;}
+        .s9 { background-image: url(09.jpg);background-size: 150px;
+		background-position: center;}
+        .s10 { background-image: url(10.jpg);background-size: 180px;
+		background-position: center;}
+        .s11 { background-image: url(11.jpg);background-size: 150px;
+		background-position: center;}
+        .s12 { background-image: url(12.jpg);background-size: 150px;
+		background-position: center;}
+        .s13 { background-image: url(13.jpg);background-size: 160px;
+		background-position: center;}
+        .s14 { background-image: url(14.jpg);background-size: 150px;
+		background-position: center;}
+        .s15 { background-image: url(15.jpg);background-size: 150px;
+		background-position: center;}
+        .s16 { background-image: url(16.jpg);background-size: 150px;
+		background-position: center;}
+		.bylove{color:green;float:left;}
+	   #yala{border-radius:50%;border-width:20px; justify-content:left;}
+	    .OnYourPosition{float:left;}
+		.boy{padding:20px;float:left;}
+		#hoba{float:left;}
+</style>
+
+<title></title>
+</head>
+
+<body>
+<h1 class="bylove">!Our Game, dudes</h1>
+<h2 id="off">!You Win</h2>
+<div class="boy"><h4 class="OnYourPosition">,Rules Are Simple</div>
+ <div class="boy"><h4>!Try to find two characters that have kind of relationship between each other</h4></div>
+ <div id="hoba">
+<div class='container'>
+<div class="grid">
+  <div class="row">
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s1"></div>
+    </div>
+
+    <div class="cell">
+      <div class=" back"></div>
+
+      <div class="front s3"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s5"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s7"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell">
+      <div class=" back"></div>
+
+      <div class="front s10"></div>
+    </div>
+
+    <div class="cell">
+      <div class=" back"></div>
+
+      <div class=" front s13"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s9"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s11"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s15"></div>
+    </div>
+
+    <div class="cell">
+      <div class=" back"></div>
+
+      <div class=" front s2"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s8"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s4"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="cell">
+      <div class=" back"></div>
+
+      <div class=" front s6"></div>
+    </div>
+
+    <div class="cell">
+      <div class=" back"></div>
+
+      <div class=" front s12"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s14"></div>
+    </div>
+
+    <div class="cell">
+      <div class="back"></div>
+
+      <div class="front s16"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<button id="yala"><b>Asad Yala feeh ehh</b></button>
+<img src="giphy.gif" class="yalaa"></img>
+<script type="text/javascript">
+    $('.front').hide();
+	    $('.yalaa').hide();
+    var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    var i = 0;
+    while(i < colors.length) {
+        $('.container').append("");
+        i = i + 1;
+    }
+    var counter = 0;
+    function reset() {
+        counter = 0;
+        $('.front').hide();
+        $('.back').show();
+    }
+    function toggleShow() {
+        $(this).find('.back').hide();
+        $(this).find('.front').show();
+        if(counter == 0) {
+        }
+        else {
+            setTimeout(reset, 200);
+            
+        }
+        counter = counter + 1;
+    }
+    $('.cell').click(toggleShow);
+	$("#off").hide();
+
+	function celebrate() {
+		$(".container").hide();
+		$(".yalaa").show();
+		$("#yala").hide();
+		$(".boy").hide();
+		$("#off").show();
+
+		
+	}
+	$('#yala').click(celebrate);
+</script>
+</body>
