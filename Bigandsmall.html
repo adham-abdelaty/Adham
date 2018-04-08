@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+<script src="jquery-3.3.1.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cairo|Roboto" rel="stylesheet"></link>
+  <style>
+  body{background-color:grey;}
+  #yala{font-family: 'Cairo', sans-serif, 'Roboto', sans-serif;}
+  #boy{border-radius:40px;padding:5px;}
+  #hoba{border-radius:40px;padding:5px;}
+  #bylove{float:left;}
+  b{float:right;}
+  </style>
+</head>
+<body>
+<h1><b id="yala">Enter a Number!</b></h1>
+<div id="bylove">
+<button id="boy"><b>Show Data</b></button>
+<button id="hoba"><b>Show Result</b></button>
+<br></br>
+<input type="number" id="run"></input>
+<div id="result"></div>
+</div>
+</body>
+<script>
+function write(text){
+document.write(text);
+document.write("<br></br>");
+}
+var s=$("#run").val();
+var d= [];
+	function m(){
+var s=$("#run").val();
+$("#result").append("<li>"+s+"</li>");
+$("#run").remove(s);
+$("#run").val("");
+d.push(s);}
+$("#boy").click(m);
+function w(){
+var j=-1; 
+var max=d[0];
+var min=d[0];
+while (j<=10){
+if(d[j]>max){
+max=d[j];
+}
+else{max=d[9];}
+if(d[j]<min){
+min=d[j];
+}
+else{}
+j=j+1;
+}
+document.write(max);
+document.write("<br></br>");
+document.write(min);
+} 
+$("#hoba").click(w);
+
+</script>
+</html>
